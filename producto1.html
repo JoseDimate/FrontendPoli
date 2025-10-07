@@ -15,6 +15,8 @@
         <a href="index.html">
             <img class="header__logo" src="img/logo.png" alt="logotipo">
         </a>
+        <button id="ver-carrito" class="boton-carrito" onclick="mostrarContenidoCarrito()">
+    Ver Carrito (0)
      </header>
 
      <nav class="navegacion">
@@ -40,7 +42,8 @@
                         <option>App Movil</option>
                     </select>
                     <input class="formulario__campo"  type="number" placeholder="Cantidad" min="1">
-                    <input class="formulario__submit" type="submit" value="Agregar al Carrito">
+                    <input class="formulario__submit" type="submit" value="Agregar al Carrito" >
+                    <button class="boton-comprar" data-id="1" >Comprar</button>
                 </form>
             </div>
         </div>
@@ -48,5 +51,7 @@
      <footer class="footer">
         <p class="footer__text">Front End <br> PolitecnicoGrancolombiano <br> Todos los derechos reservados 2025</p>
      </footer>
+
+     <script src="js/scripts.js"></script> </body>
 </body>
 </html>

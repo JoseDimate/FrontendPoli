@@ -14,6 +14,18 @@
     <header class="header">
         <a href="index.html">
             <img class="header__logo" src="img/logo.png" alt="logotipo">
+
+            <button id="ver-carrito" class="boton-carrito" onclick="mostrarContenidoCarrito()">
+    Ver Carrito (0)
+</button>
+
+<div id="resumen-carrito" class="resumen-carrito" style="display: none;">
+    <h2>Resumen de Compras</h2>
+    <ul id="lista-carrito">
+        </ul>
+    <p>Total a pagar: <span id="carrito-total"></span></p>
+    <button onclick="document.getElementById('resumen-carrito').style.display='none'">Cerrar</button>
+</div>
      </header>
 
      <nav class="navegacion">
@@ -162,5 +174,7 @@
      <footer class="footer">
         <p class="footer__text">Front End <br> PolitecnicoGrancolombiano <br> Todos los derechos reservados 2025</p>
      </footer>
+
+     <script src="js/pago.js"></script>
 </body>
 </html>

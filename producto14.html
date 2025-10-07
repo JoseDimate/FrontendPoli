@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="script" type="text/javascript" src="js/Carrito.js">
+    <href="">
 
 </head>
 <body>
@@ -15,6 +17,8 @@
         <a href="index.html">
             <img class="header__logo" src="img/logo.png" alt="logotipo">
         </a>
+        <button id="ver-carrito" class="boton-carrito" onclick="mostrarContenidoCarrito()">
+    Ver Carrito (0)
      </header>
 
      <nav class="navegacion">
@@ -22,29 +26,33 @@
          <a class="navegacion__enlace navegacion__enlace--activo" href="nosotros.html">Nosotros</a>
      </nav>
 
+
      <main class="contenedor">
-        <h1>Marketing Digital para <br>Servicios Tecnológicos</h1>
-     
+    <h1>Marketing Digital para <br>Servicios Tecnológicos</h1>
+    
+    <p class="camisa__precio" id="precio-producto">$12</p> 
 
-        <div class="camisa">
-            <img class="camisa__imagen" src="img/14.jpg" alt="Imagen Del Producto">
+    <div class="camisa">
+        <img class="camisa__imagen" src="img/14.jpg" alt="Imagen Del Producto">
 
-            <div class="camisa__contenido">
-                <p>Atraemos a tu cliente ideal. Desarrollamos estrategias de SEO, Content Marketing y campañas de PPC (Pago por Clic) especializadas en el sector tecnológico para generar leads cualificados y aumentar tu visibilidad.</p>
+        <div class="camisa__contenido">
+            <p>Atraemos a tu cliente ideal. Desarrollamos estrategias de SEO, Content Marketing y campañas de PPC (Pago por Clic) especializadas en el sector tecnológico para generar leads cualificados y aumentar tu visibilidad.</p>
 
-                <form class="formulario">
-                    <select class="formulario__campo">
-                        <option disabled selected>Selecione un servicio</option>
-                        <option>Diseño Web</option>
-                        <option>CRM</option>
-                        <option>App Movil</option>
-                    </select>
-                    <input class="formulario__campo" type="number" placeholder="Cantidad" min="1">
-                    <input class="formulario__submit" type="submit" value="Agregar al Carrito">
-                </form>
-            </div>
+            <form class="formulario" id="formulario-agregar" data-id="14" data-nombre="Marketing Digital para Servicios Tecnológicos">
+                <select class="formulario__campo" id="servicio-seleccionado"> 
+                    <option disabled selected value="">Selecione un servicio</option>
+                    <option value="Diseño Web">Diseño Web</option>
+                    <option value="CRM">CRM</option>
+                    <option value="App Movil">App Movil</option>
+                </select>
+                
+                <input class="formulario__campo" type="number" placeholder="Cantidad" min="1" value="1" id="cantidad-producto"> 
+                
+                <input class="formulario__submit" type="submit" value="Agregar al Carrito">
+            </form>
         </div>
-    </main>
+    </div>
+</main>
      <footer class="footer">
         <p class="footer__text">Front End <br> PolitecnicoGrancolombiano <br> Todos los derechos reservados 2025</p>
      </footer>

@@ -27,6 +27,7 @@
      <main class="contenedor">
         <h1>Desarrollo de Aplicaciones Móviles <br>( iOS & Android)</h1>
      
+             <p class="camisa__precio" id="precio-producto">$2.000</p>
 
         <div class="camisa">
             <img class="camisa__imagen" src="img/2.jpg" alt="Imagen Del Producto">
@@ -34,14 +35,14 @@
             <div class="camisa__contenido">
                 <p>Creamos aplicaciones nativas e híbridas de alto rendimiento. Logra una conexión directa con tus usuarios y amplía tu alcance en las tiendas de Apple y Google con apps diseñadas para ofrecer una experiencia de usuario excepcional.</p>
 
-                <form class="formulario">
-                    <select class="formulario__campo">
+                <form class="formulario" id="formulario-agregar" data-id="2" data-nombre="producto 2" data-precio="60000">
+                    <select class="formulario__campo" id="servicio-seleccionado">
                         <option disabled selected>Selecione un servicio</option>
                         <option>Diseño Web</option>
                         <option>CRM</option>
                         <option>App Movil</option>
                     </select>
-                    <input class="formulario__campo"  type="number" placeholder="Cantidad" min="1">
+                    <input class="formulario__campo"  type="number" placeholder="Cantidad" min="1" value="1" id="cantidad-producto">
                     <input class="formulario__submit" type="submit" value="Agregar al Carrito">
                 </form>
             </div>
@@ -50,5 +51,6 @@
      <footer class="footer">
         <p class="footer__text">Front End <br> PolitecnicoGrancolombiano <br> Todos los derechos reservados 2025</p>
      </footer>
+      <script src="js/Carrito.js"></script>
 </body>
 </html>

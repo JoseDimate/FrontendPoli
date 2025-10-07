@@ -257,7 +257,7 @@ h3{font-size: 2.4rem;}
 }
 
 .boton-carrito {
-    position: fixed;
+    position: absolute;
     top: 20px;
     right: 20px;
     padding: 10px 15px;
